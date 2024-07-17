@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Atendimento</title>
+</head>
+<body>
+    <h2>Registro de Atendimento</h2>
+    <form action="processa_atendimento.php" method="post">
+        <div>
+            <label for="formaAtendimento">Forma de Atendimento:</label>
+            <select id="formaAtendimento" name="formaAtendimento" required>
+                <option value="">Selecione...</option>
+                <option value="1">Presencial</option>
+                <option value="2">WhatsApp</option>
+                <option value="3">Ligação Telefônica</option>
+                <option value="4">E-mail</option>
+                <option value="5">Redes Sociais</option>
+                <option value="6">Teams</option>
+            </select>
+        </div>
+        <div>
+            <label for="perfilAtendido">Perfil da Pessoa Atendida:</label>
+            <select id="perfilAtendido" name="perfilAtendido" required>
+                <option value="">Selecione...</option>
+                <option value="1">Empregador</option>
+                <option value="2">Trabalhador</option>
+                <option value="3">Setor da FGTAS</option>
+                <!-- Adicione outros perfis conforme necessário -->
+            </select>
+        </div>
+        <div>
+            <button type="submit">Registrar Atendimento</button>
+        </div>
+    </form>
+</body>
+</html>
